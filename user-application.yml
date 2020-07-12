@@ -32,8 +32,3 @@ hystrix:
 feign:
   hystrix:
     enabled: true #开启feign当中的hystrix
-
-spring:
-  profiles: dev
-server:
-  port: 8081
