@@ -1,0 +1,13 @@
+
+server:
+  port: 8080
+spring:
+  application:
+    name: testConfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/y514070141/cloudConfig.git
+#          search-paths: foo,goods* #在git仓库根目录 子目录 以及所有以goods开头的目录
+          clone-on-start: true  #启动时, 就clone仓库到本地, 默认是在配置首次请求时clone到本地
